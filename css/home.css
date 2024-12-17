@@ -1,0 +1,216 @@
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 5rem;
+    gap: 5rem;
+}
+
+main a {
+    text-decoration: underline;
+    color: #F1FAEE;
+    transition: color 0.3s ease-out;   
+}
+
+main a:hover {
+    color: #32CD32;
+    transition: color 0s ease-out;
+}
+
+.empresa, .candidato, .sobre-nos {
+    height: 46.071rem;
+    width: 82.014rem;
+}
+
+.card-candidato h1, .card-empresa h1, .card-sn h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #F1FAEE;
+}
+
+.card-candidato p, .card-candidato-2 p, .card-empresa p, .card-empresa-2 p, .card-sn p {
+    font-size: 1.5rem;
+    text-align: justify;
+    color: #F1FAEE;
+}
+
+/* ------SECTION SOBRE NÓS------ */
+.sobre-nos {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.espaco-sn {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    margin-right: 6rem;
+    margin-top: 7rem;
+}
+
+.card-sn {
+    background-color: #1D3557CC;
+    width: 20rem;
+    height: 12rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+#btn-saibaMais {
+    height: 4rem;
+    width: 12rem;
+    background-color: #1D3557;
+    color: #F1FAEE;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 0.125rem solid #333333;
+    border-radius: 1.2rem;
+    transition: background-color 0.35s ease-out, border 0.35s ease-out;
+    cursor: pointer;
+}
+
+#btn-saibaMais:hover {
+    background-color: #32CD32;
+    border: 0.125rem solid #32CD32;
+}
+
+#btn-saibaMais:active {
+    background-color: #1D3557;
+    transition: background-color 0s ease-out 0s;
+    border: 0.125rem solid #333333;
+}
+/* ------SECTION SOBRE NÓS------ */
+
+/* ------SECTION CANDIDATOS------ */
+.card-candidato {
+    width: 30rem;
+    height: 10.5rem;
+    background-color: #1D3557CC;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 4rem;
+    margin-left: 4rem;
+}
+
+.espaco-candidato {
+    display: flex;
+    justify-content: center;
+}
+
+.card-candidato-2 {
+    width: 31.7rem;
+    height: 2rem;
+    background-color: #1D3557CC;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 13rem;
+}
+/* ------SECTION CANDIDATOS------ */
+
+/* ------SECTION EMPRESA------ */
+.empresa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-empresa {
+    width: 30rem;
+    height: 11rem;
+    background-color: #1D3557CC;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.card-empresa-2 {
+    background-color: #1D3557CC;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+/* ------SECTION EMPRESA------ */
+
+/* ------SECTION PLANOS------ */
+.sec-planos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.titulos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.titulos h1 {
+    color: #1D3557;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.titulos h2 {
+    color: #457B9D;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.planos {
+    display: flex;
+    gap: 5rem;
+}
+
+.plano {
+    background-color: #DAEAEB;
+    padding: 2rem;   
+    border-radius: 1rem;
+    width: 30rem;
+    height: 23rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plano:hover {
+    transform: translateY(-0.313rem);
+    box-shadow: 0.15rem 0.25rem 0.4rem 0.1rem #666666;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho h1 {
+    color: #1D3557;
+    font-size: 2.5rem;
+}
+
+.cabecalho h2 {
+    color: #457B9D;
+    font-size: 1.8rem;
+}
+
+.beneficios {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.beneficios h3 {
+    color: #333333;
+    font-size: 1.5rem;
+}
+/* ------SECTION PLANOS------ */

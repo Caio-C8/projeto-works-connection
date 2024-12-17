@@ -1,0 +1,202 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 5rem;
+    gap: 2rem;
+}
+
+h1 {
+    color: #1D3557;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+h2 {
+    color: #457B9D;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+label {
+    color: #333333;
+    text-indent: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+h5 {
+    color: #333333;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* ------TÍTULOS------ */
+.titulos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------TÍTULOS------ */
+
+/* ------CAMPO DE INPUTS------ */
+.campos {
+    background-color: #DAEAEB;
+    border: 0.125rem solid #333333;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 55rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.campos:hover {
+    transform: translateY(-0.313rem);
+    box-shadow: 0.15rem 0.25rem 0.4rem 0.1rem #666666;
+}
+
+.inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.campos input {
+    padding: 0.5rem;
+    border: 0.125rem solid #333333;
+    border-radius: 1rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    background-color: #F1FAEE;
+}
+
+.campos textarea {
+    padding: 0.5rem;
+    border: 0.125rem solid #333333;
+    border-radius: 1rem;
+    resize: none;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    max-height: 5.2rem;
+    min-height: 5.2rem;
+    background-color: #F1FAEE;
+}
+
+/* Remove a borda padrão e os efeitos ao passar o mouse */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    padding: 0.5rem;
+    border: 0.125rem solid #333333;
+    border-radius: 1rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    background-color: #F1FAEE;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 20 20'%3E%3Cpolygon fill='%23333' points='0,0 20,0 10,10'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px;
+}
+
+.espaco-btn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.cnpj-cel {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+}
+
+.endereco1 {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+.endereco2 {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    color: #457B9D;
+    transition: color 0.35s ease-out;
+}
+
+.links a:hover {
+    color: #32CD32;
+    transition: color 0s ease-out;
+}
+
+.nome-sobrenome {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+}
+
+.cpf-cel {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+}
+
+.sexo-endereco {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+/* ------CAMPO DE INPUTS------ */
+
+/* ------BOTÕES------ */
+#btn-cadastrar-empresa {
+    width: 12rem;
+}
+
+#btn-login {
+    width: 9rem;
+}
+
+#btn-publicar {
+    width: 12rem;
+}
+
+/* ------BOTÕES------ */
