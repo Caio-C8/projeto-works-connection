@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro Empresa - Work's Connection</title>
+    <link
+      rel="shortcut icon"
+      href="img/LogoWorksConnectionIcon.png"
+      type="imagex/png"
+    />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="stylesheet" href="css/formularios.css" type="text/css" />
+  </head>
+
+  <body>
+    <header class="nav-barra">
+      <a href="/">
+        <img src="img/LogoWorksConnection.png" alt="Logo" />
+      </a>
+      <nav class="nav-itens">
+        <ul>
+          <li><a class="nav-links" href="vagas.html">PROCURAR VAGAS</a></li>
+          <li>
+            <a class="nav-links" href="publicar_vagas.html">PUBLICAR VAGAS</a>
+          </li>
+        </ul>
+        <div class="pesquisa">
+          <input type="text" placeholder="PESQUISAR" id="" />
+        </div>
+        <a class="user" id="link-perfil" href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="80"
+            height="80"
+            fill="currentColor"
+            class="bi bi-person-circle"
+            viewBox="0 0 16 16"
+          >
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+            <path
+              fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+            />
+          </svg>
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="titulos">
+        <h1>OLÁ EMPREGADOR!</h1>
+        <h2>É NOVO? CADASTRE-SE JÁ</h2>
+      </section>
+      <form id="form-cadastro-empresa" method="POST">
+        <section class="campos">
+          <div class="inputs">
+            <label for="razao-social">Razão Social:</label>
+            <input
+              type="text"
+              id="razao-social"
+              name="razao"
+              placeholder="Inserir razão social"
+              required
+            />
+          </div>
+          <div class="inputs">
+            <label for="nome-fantasia">Nome Fantasia:</label>
+            <input
+              type="text"
+              id="nome-fantasia"
+              name="nome"
+              placeholder="Inserir nome fantasia"
+              required
+            />
+          </div>
+          <div class="cnpj-cel">
+            <div class="inputs">
+              <label for="cnpj">CNPJ:</label>
+              <input
+                type="text"
+                id="cnpj"
+                name="cnpj"
+                placeholder="Inserir CNPJ"
+                required
+                minlength="14"
+              />
+            </div>
+            <div class="inputs">
+              <label for="cel-empresa">Número de Celular:</label>
+              <input
+                type="text"
+                id="cel-empresa"
+                name="celular"
+                placeholder="Inserir número de celular"
+                required
+              />
+            </div>
+          </div>
+          <div class="inputs">
+            <label for="email-empresa">E-mail:</label>
+            <input
+              type="email"
+              id="email-empresa"
+              name="email"
+              placeholder="Inserir e-mail"
+              required
+            />
+          </div>
+          <div class="inputs">
+            <label for="senha-empresa">Senha:</label>
+            <input
+              type="password"
+              id="senha-empresa"
+              name="senha"
+              placeholder="Inserir senha"
+              required
+              minlength="8"
+            />
+          </div>
+        </section>
+
+        <section class="titulos">
+          <h2>ENDEREÇO</h2>
+        </section>
+
+        <section class="campos">
+          <div class="endereco1">
+            <div class="inputs">
+              <label for="pais-empresa">País:</label>
+              <input
+                type="text"
+                id="pais-empresa"
+                name="pais"
+                placeholder="Inserir país"
+                required
+              />
+            </div>
+            <div class="inputs">
+              <label for="estado-empresa">Estado:</label>
+              <input
+                type="text"
+                id="estado-empresa"
+                name="estado"
+                placeholder="Inserir estado"
+                required
+              />
+            </div>
+            <div class="inputs">
+              <label for="cidade">Cidade:</label>
+              <input
+                type="text"
+                id="cidade"
+                name="cidade"
+                placeholder="Inserir cidade"
+                required
+              />
+            </div>
+          </div>
+          <div class="endereco2">
+            <div class="inputs">
+              <label for="rua">Rua:</label>
+              <input
+                type="text"
+                id="rua"
+                name="rua"
+                placeholder="Inserir rua"
+                required
+              />
+            </div>
+            <div class="inputs">
+              <label for="numero">Número:</label>
+              <input
+                type="number"
+                id="numero"
+                name="numero"
+                placeholder="Inserir número"
+                required
+              />
+            </div>
+          </div>
+        </section>
+        <div class="espaco-btn">
+          <button class="btn" id="btn-cadastrar-empresa" type="submit">
+            CADASTRAR
+          </button>
+        </div>
+      </form>
+
+      <section class="links">
+        <h5>
+          É um candidato? <a href="cadastro_candidato.html">Cadastre-se aqui</a>
+        </h5>
+      </section>
+    </main>
+
+    <footer>
+      <img src="img/LogoWorksConnection.png" alt="logo" />
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+    <script src="js/cadastro.js" defer></script>
+    <script src="js/verificarLogin.js" defer></script>
+  </body>
+</html>

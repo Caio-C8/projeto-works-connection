@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro Candidato - Work's Connection</title>
+    <link
+      rel="shortcut icon"
+      href="img/LogoWorksConnectionIcon.png"
+      type="imagex/png"
+    />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="stylesheet" href="css/formularios.css" type="text/css" />
+  </head>
+
+  <body>
+    <header class="nav-barra">
+      <a href="/">
+        <img src="img/LogoWorksConnection.png" alt="Logo" />
+      </a>
+      <nav class="nav-itens">
+        <ul>
+          <li><a class="nav-links" href="vagas.html">PROCURAR VAGAS</a></li>
+          <li>
+            <a class="nav-links" href="publicar_vagas.html">PUBLICAR VAGAS</a>
+          </li>
+        </ul>
+        <div class="pesquisa">
+          <input type="text" placeholder="PESQUISAR" id="" />
+        </div>
+        <a class="user" id="link-perfil" href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="80"
+            height="80"
+            fill="currentColor"
+            class="bi bi-person-circle"
+            viewBox="0 0 16 16"
+          >
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+            <path
+              fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+            />
+          </svg>
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="titulos">
+        <h1>OLÁ CANDIDATO!</h1>
+        <h2>É NOVO? CADASTRE-SE JÁ</h2>
+      </section>
+      <form id="form-cadastro-candidato" method="POST">
+        <section class="campos">
+          <div class="nome-sobrenome">
+            <div class="inputs">
+              <label for="nome-candidato">Nome:</label>
+              <input
+                type="text"
+                id="nome-candidato"
+                name="nome"
+                placeholder="Inserir nome"
+                required
+              />
+            </div>
+            <div class="inputs">
+              <label for="sobrenome-candidato">Sobrenome:</label>
+              <input
+                type="text"
+                id="sobrenome-candidato"
+                name="sobrenome"
+                placeholder="Inserir sobrenome"
+                required
+              />
+            </div>
+          </div>
+          <div class="cpf-cel">
+            <div class="inputs">
+              <label for="cpf">CPF:</label>
+              <input
+                type="text"
+                id="cpf"
+                name="cpf"
+                placeholder="Inserir CPF"
+                required
+                minlength="11"
+              />
+            </div>
+            <div class="inputs">
+              <label for="cel-candidato">Número de Celular:</label>
+              <input
+                type="text"
+                id="cel-candidato"
+                name="celular"
+                placeholder="Inserir número de celular"
+                required
+              />
+            </div>
+          </div>
+          <div class="inputs">
+            <label for="email-candidato">E-mail:</label>
+            <input
+              type="email"
+              id="email-candidato"
+              name="email"
+              placeholder="Inserir e-mail"
+              required
+            />
+          </div>
+          <div class="inputs">
+            <label for="senha-candidato">Senha:</label>
+            <input
+              type="password"
+              id="senha-candidato"
+              name="senha"
+              placeholder="Inserir senha"
+              required
+              minlength="8"
+            />
+          </div>
+          <div class="sexo-endereco">
+            <div class="inputs">
+              <label for="sexo">Sexo:</label>
+              <select id="sexo" name="sexo" required>
+                <option value="">Selecione uma opção</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="nao_informado">Prefiro não dizer</option>
+              </select>
+            </div>
+            <div class="inputs">
+              <label for="pais-candidato">País:</label>
+              <input
+                type="text"
+                id="pais-candidato"
+                name="pais"
+                placeholder="Inserir país"
+                required
+              />
+            </div>
+            <div class="inputs">
+              <label for="estado-candidato">Estado:</label>
+              <input
+                type="text"
+                id="estado-candidato"
+                name="estado"
+                placeholder="Inserir estado"
+                required
+              />
+            </div>
+          </div>
+        </section>
+        <div class="espaco-btn">
+          <button class="btn" id="btn-cadastrar-candidato" type="submit">
+            CADASTRAR
+          </button>
+        </div>
+      </form>
+
+      <section class="links">
+        <h5>
+          É uma empresa? <a href="cadastro_empresa.html">Cadastre-se aqui</a>
+        </h5>
+      </section>
+    </main>
+
+    <footer>
+      <img src="img/LogoWorksConnection.png" alt="logo" />
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+    <script src="js/cadastro.js" defer></script>
+    <script src="js/verificarLogin.js" defer></script>
+  </body>
+</html>

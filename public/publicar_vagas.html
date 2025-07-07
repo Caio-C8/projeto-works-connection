@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Publicar Vagas - Work's Connection</title>
+    <link
+      rel="shortcut icon"
+      href="img/LogoWorksConnectionIcon.png"
+      type="imagex/png"
+    />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="stylesheet" href="css/formularios.css" type="text/css" />
+    <link rel="stylesheet" href="css/froala.css" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment-with-locales.min.js"></script>
+  </head>
+
+  <body>
+    <header class="nav-barra">
+      <a href="/">
+        <img src="img/LogoWorksConnection.png" alt="Logo" />
+      </a>
+      <nav class="nav-itens">
+        <ul>
+          <li><a class="nav-links" href="vagas.html">PROCURAR VAGAS</a></li>
+          <li><a class="nav-links" href="#">PUBLICAR VAGAS</a></li>
+        </ul>
+        <div class="pesquisa">
+          <input type="text" placeholder="PESQUISAR" id="" />
+        </div>
+        <a class="user" id="link-perfil" href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="80"
+            height="80"
+            fill="currentColor"
+            class="bi bi-person-circle"
+            viewBox="0 0 16 16"
+          >
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+            <path
+              fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+            />
+          </svg>
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="titulos">
+        <h1>PUBLIQUE SUA PROPOSTA DE EMPREGO</h1>
+        <h2>PROCURE POR PESSOAS INTERESSADAS EM SUA PROPOSTA</h2>
+      </section>
+      <form
+        action="php/publicar_vagas.php"
+        id="form-publicar-vaga"
+        method="POST"
+      >
+        <section class="campos">
+          <div class="inputs">
+            <label for="nome-empresa">Nome da Empresa:</label>
+            <input
+              type="text"
+              name="nome_empresa"
+              id="nome-empresa"
+              placeholder="INSERIR NOME"
+              required
+            />
+          </div>
+          <div class="inputs">
+            <label for="ocupacao">Ocupação da Vaga:</label>
+            <input
+              type="text"
+              name="ocupacao"
+              id="ocupacao"
+              placeholder="INSERIR OCUPAÇÃO"
+              required
+            />
+          </div>
+          <div class="inputs">
+            <label for="local-trabalho">Local de Trabalho:</label>
+            <input
+              type="text"
+              name="local_trabalho"
+              id="local-trabalho"
+              placeholder="INSERIR CIDADE E ESTADO"
+              required
+            />
+          </div>
+          <div class="inputs">
+            <label for="modo-trabalho">Modo de Trabalho:</label>
+            <input
+              type="text"
+              name="modo_trabalho"
+              id="modo-trabalho"
+              placeholder="INSERIR MODO DE TRABALHO"
+              required
+            />
+          </div>
+          <div class="inputs">
+            <label for="salario">Faixa Salarial:</label>
+            <input
+              type="text"
+              name="salario"
+              id="salario"
+              placeholder="INSERIR FAIXA SALARIAL"
+              required
+            />
+          </div>
+          <div class="inputs">
+            <label for="descricao">Descrição da Vaga:</label>
+            <div id="editor"></div>
+            <input type="hidden" name="descricao" id="descricao" />
+          </div>
+        </section>
+        <div class="espaco-btn">
+          <button class="btn" id="btn-publicar" type="submit">PUBLICAR</button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <img src="img/LogoWorksConnection.png" alt="Logo" />
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/froala-editor@4.0.7/js/froala_editor.pkgd.min.js"></script>
+    <script src="js/publicarVagas.js" defer></script>
+    <script src="js/verificarLogin.js" defer></script>
+  </body>
+</html>

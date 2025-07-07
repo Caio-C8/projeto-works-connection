@@ -15,6 +15,7 @@ CREATE TABLE candidatos (
     sexo VARCHAR(20) NOT NULL,
     pais VARCHAR(50) NOT NULL,
     estado VARCHAR(50) NOT NULL,
+    descricao TEXT DEFAULT NULL,
     FOREIGN KEY (usuario_id) REFERENCES usuarios(id) ON DELETE CASCADE
 ) ENGINE=InnoDB;
 
@@ -30,6 +31,7 @@ CREATE TABLE empresas (
     cidade VARCHAR(50) NOT NULL,
     rua VARCHAR(255) NOT NULL,
     numero VARCHAR(10) NOT NULL,
+    descricao TEXT DEFAULT NULL,
     FOREIGN KEY (usuario_id) REFERENCES usuarios(id) ON DELETE CASCADE
 ) ENGINE=InnoDB;
 
