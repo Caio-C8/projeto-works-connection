@@ -26,3 +26,23 @@ Este é um site feito para uma empresa, chamada Dimensional Consultoria, que lid
 
 - **Parcialmente funcional** - O projeto não ficou totalmente funcional, sem uma divisão de usuários, com qualquer um conseguindo adicionar vagas, sem cadastro para as vagas e sem pesquisa de vagas, isso devido à falta de conhecimento.
 - **Pouca resposividade** - O layout do projeto não foi focado atender diversos dispositivos devido ao curto tempo de desenvolvimento.
+
+## Instrtuções de execução
+
+- **Abra o terminal na raiz do projeto**
+- **Se estiver no Windows, clique duas vezes no arquivo 'rebuild.bat' ou execute:**
+  ```bash
+  ./rebuild.bat
+  ```
+- **Se estiver no Linux ou MacOS, execute:**
+  ```bash
+  ./rebuild.sh
+  ```
+  **Se o script não for executável, execute:**
+  ```bash
+  chmod +x rebuild.sh
+  ```
+
+### Pré-requsitos
+
+- [Docker](https://www.docker.com/products/docker-desktop) instalado.
