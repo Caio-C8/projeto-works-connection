@@ -29,16 +29,16 @@ Este é um site feito para uma empresa, chamada Dimensional Consultoria, que lid
 
 ## Instruções de execução
 
-- **Abra o terminal na raiz do projeto**
-- **Se estiver no Windows, clique duas vezes no arquivo 'rebuild.bat' ou execute:**
+1. **Abra o terminal na raiz do projeto**
+2. **Se estiver no Windows, clique duas vezes no arquivo 'rebuild.bat' ou execute:**
   ```bash
   ./rebuild.bat
   ```
-- **Se estiver no Linux ou MacOS, execute:**
+2. **Se estiver no Linux ou MacOS, execute:**
   ```bash
   ./rebuild.sh
   ```
-  **Se o script não for executável, execute:**
+  **Se o script não for executável, execute antes:**
   ```bash
   chmod +x rebuild.sh
   ```
