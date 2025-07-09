@@ -27,7 +27,7 @@ Este é um site feito para uma empresa, chamada Dimensional Consultoria, que lid
 - **Parcialmente funcional** - O projeto não ficou totalmente funcional, sem uma divisão de usuários, com qualquer um conseguindo adicionar vagas, sem cadastro para as vagas e sem pesquisa de vagas, isso devido à falta de conhecimento.
 - **Pouca resposividade** - O layout do projeto não foi focado atender diversos dispositivos devido ao curto tempo de desenvolvimento.
 
-## Instrtuções de execução
+## Instruções de execução
 
 - **Abra o terminal na raiz do projeto**
 - **Se estiver no Windows, clique duas vezes no arquivo 'rebuild.bat' ou execute:**
