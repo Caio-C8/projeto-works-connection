@@ -33,6 +33,7 @@ Este é um site feito para uma empresa, chamada Dimensional Consultoria, que lid
 
 1. **Abra o terminal na raiz do projeto**
 2. **Executar arquivos de rebuild**
+
 2.1. **No Windows, clique duas vezes no arquivo 'rebuild.bat' ou execute:**
    
   ```bash
