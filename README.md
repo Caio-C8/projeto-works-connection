@@ -8,15 +8,18 @@ Este é um site feito para uma empresa, chamada Dimensional Consultoria, que lid
 
 ### Front-end
 
-- **HTML5** – Estrutura semântica do conteúdo.
-- **CSS3** – Estilização personalizada.
-- **JavaScript (Vannila JS)** - Conteúdos dinâmicos e envio de requisições fetch para o back-end.
+- **HTML5**
+- **CSS3**
+- **JavaScript (Vannila JS)**
 
 ### Back-end
 
-- **PHP 7.4** - Linguagem usada para processar dados.
-- **MySQL 5.7** - Banco de dados relacional.
-- **Apache HTTP Server** - Responsável por servir os arquivos do projeto.
+- **PHP 7.4**
+- **Apache HTTP Server**
+
+### Banco de dados
+
+- **MySQL 5.7**
 
 ### Ambiente de desenvolvimento
 
@@ -24,21 +27,24 @@ Este é um site feito para uma empresa, chamada Dimensional Consultoria, que lid
 
 ## Observações
 
-- **Parcialmente funcional** - O projeto não ficou totalmente funcional, sem uma divisão de usuários, com qualquer um conseguindo adicionar vagas, sem cadastro para as vagas e sem pesquisa de vagas, isso devido à falta de conhecimento.
-- **Pouca resposividade** - O layout do projeto não foi focado atender diversos dispositivos devido ao curto tempo de desenvolvimento.
+- Este projeto foi desenvolvido para fins acadêmicos em aproximadamente 6 meses, durante o 2º período do curso de Sistemas de Informação.
 
 ## Instruções de execução
 
 1. **Abra o terminal na raiz do projeto**
-2. **Se estiver no Windows, clique duas vezes no arquivo 'rebuild.bat' ou execute:**
+2. **Executar arquivos de rebuild**
+2.1. **No Windows, clique duas vezes no arquivo 'rebuild.bat' ou execute:**
+   
   ```bash
   ./rebuild.bat
   ```
-2. **Se estiver no Linux ou MacOS, execute:**
+2.2. **No Linux ou MacOS, execute:**
+
   ```bash
   ./rebuild.sh
   ```
   **Se o script não for executável, execute antes:**
+  
   ```bash
   chmod +x rebuild.sh
   ```
